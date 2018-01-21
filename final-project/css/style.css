@@ -75,6 +75,7 @@ grid-template-areas:
 /* menu css */
 
 .menucontainer {
+    background-color: #F8DAC2;
     display: grid; 
     width: 100%;
     grid-template-columns: repeat(12,1fr); 
