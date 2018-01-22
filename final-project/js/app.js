@@ -1,12 +1,16 @@
+// Open and close menu 
 $(function() {
-    // Hide the menu
     $("#menu").hide();
-    // Toggle menu on click hamburger
-    $("#openMenu").click(function() {
+    $("#showMenu").click(function() {
       $("#menu").toggle();
     });
-    // Close menu on click "X"
-    $("#closeMenu").click(function() {
+    $("#hideMenu").click(function() {
       $("#menu").hide();
     });
   });
+
+// Enlarge image click on index page and album page
+// Click to album page when click on country name
+// Change country name when scroll on index page 
+
+// (if  i have time) offset image when scrolling on index page
