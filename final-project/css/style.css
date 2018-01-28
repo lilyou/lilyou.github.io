@@ -5,6 +5,7 @@
  body{
     font-family: 'Lato', sans-serif;
     background:#E8EAEB;
+    line-height: 1.5em
 }
 .logo{
     font-family: 'Montserrat', sans-serif;
@@ -69,7 +70,7 @@
 /* menu css */
 .menucontainer {
     height: 100vh;
-    background-color: #F8DAC2;
+    background-color:#f8dac2e8;
     display: grid;
     width: 100%;
     padding: 20px;
@@ -81,6 +82,7 @@
 }
 .navbar {
     position: fixed;
+    margin: 20px 20px;
     top: 0;
     left: 0;
     width: 100%;
@@ -98,6 +100,10 @@
 }
 .section1, .section2, .section3{
     padding:20px;
+}
+
+.headline, .body {
+    margin:20px;
 }
 .headline{
     font-family: 'Lato', sans-serif;

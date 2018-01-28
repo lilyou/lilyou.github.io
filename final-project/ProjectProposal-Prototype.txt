@@ -17,3 +17,5 @@ Nice to have features:
 • integrate instagram 
 
 Prototype link here: https://projects.invisionapp.com/share/ABFD8A2XKCT
+
+Enlarge image reference: https://codepen.io/tholman/pen/mlDiK
