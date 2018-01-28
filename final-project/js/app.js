@@ -1,12 +1,19 @@
 // Open and close menu 
 $(function() {
-    $("#menu").hide();
-    $("#showMenu").click(function() {
-      $("#menu").toggle();
-    });
+    $(".menucontainer").hide();
     $("#hideMenu").click(function() {
-      $("#menu").hide();
+      if ($(".menucontainer").css("display") === "none") {
+        $(".menucontainer").show();
+        $("#hideMenu").html("X");
+      }
+      else {
+        $(".menucontainer").hide();
+        $("#hideMenu").html("☰");
+      }
     });
+    // $(".menubutton").click(function() {
+    //   $(".menucontainer").hide();
+    // });
   });
 
 // Enlarge image click on index page and album page
