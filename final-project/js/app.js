@@ -1,5 +1,6 @@
 // Open and close menu 
 $(function() {
+  $("#menuImport").load("menu.html", function() {
     $(".menucontainer").hide();
     $("#hideMenu").click(function() {
       if ($(".menucontainer").css("display") === "none") {
@@ -11,10 +12,8 @@ $(function() {
         $("#hideMenu").html("☰");
       }
     });
-    // $(".menubutton").click(function() {
-    //   $(".menucontainer").hide();
-    // });
   });
+});
 
 // Enlarge image click on index page and album page
 // Click to album page when click on country name

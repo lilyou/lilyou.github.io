@@ -5,7 +5,10 @@
  body{
     font-family: 'Lato', sans-serif;
     background:#E8EAEB;
-    line-height: 1.5em
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
 }
 .logo{
     font-family: 'Montserrat', sans-serif;
@@ -17,6 +20,11 @@
     position: absolute;
     left: 0;
     right: 0;
+    pointer-events: none;
+}
+.hidemenu {
+    cursor: pointer;
+    pointer-events: all;
 }
 .country{
     font-family: 'Lato', sans-serif;
