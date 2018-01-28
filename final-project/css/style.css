@@ -70,7 +70,7 @@
 /* menu css */
 .menucontainer {
     height: 100vh;
-    background-color:#f8dac2e8;
+    background-color:#f8dac2f5;
     display: grid;
     width: 100%;
     padding: 20px;
@@ -89,11 +89,11 @@
 }
 .section1{
     grid-area: s1;
-    border-right: 3px solid #F4426E;
+    border-right: 1.5px solid #F4426E;
 }
 .section2{
     grid-area: s2;
-    border-right: 3px solid #F4426E;
+    border-right: 1.5px solid #F4426E;
 }
 .section3{
     grid-area: s3;
@@ -113,4 +113,13 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     text-align: left;
+}
+
+/* album css */
+.albumContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.albumImage{
+    margin: 10px;
 }
