@@ -1,8 +1,12 @@
 $(".meme-form").submit(function(event) {
     event.preventDefault();
     //javascript, jQuery
+
+    var userInput = $('.meme-input').val();
+    console.log('userInput');
+    
     var xhr = $.get(
-      "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=B7sWndtrTpasT76sJkJuWIbPQJ1J5Eg6"
+      "http://api.giphy.com/v1/gifs/search?q=" + userInput + "+shiba+inu&api_key=B7sWndtrTpasT76sJkJuWIbPQJ1J5Eg6"
     );
     xhr.done(function(data) {
       var memes = data.data;
