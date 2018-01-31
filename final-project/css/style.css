@@ -8,12 +8,14 @@
     line-height: 1.5em;
 }
 a{
+    text-decoration-color: none; color: #000000;
     text-decoration: none;
 }
 .logo{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     text-align: left;
+    
 }
 .menubutton{
     text-align: center;
@@ -28,19 +30,21 @@ a{
 }
 .country{
     font-family: 'Lato', sans-serif;
-    font-size: 26px;
+    font-size: 1.4vw;
     position: absolute;
     top: 50%;
     left: 0;
     right:0;
 }
-.container1 {
+.country-gallery {
     display: grid;
     position: relative;
     width: 100%;
     grid-template-columns: repeat(12,1fr);
     grid-template-areas: "l l l l l m m r r r r r" ;
     top:50px;
+    border: 1px solid red;
+
 }
 /* 5-2-5 */
 .middle {
@@ -108,6 +112,11 @@ a{
 }
 .section1, .section2, .section3{
     padding:20px;
+}
+
+.nav-link {
+    display: block;
+    cursor: pointer;
 }
 
 .headline, .body {
