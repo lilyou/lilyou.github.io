@@ -12,45 +12,29 @@ $(function() {
         $("#hideMenu").html("☰");
       }
     });
+
+    $('.img-modal').click(function(event){  
+      $(event.currentTarget).hide();
+    });
   });
 });
 
-console.log($('#france'));
-
-$('#france').waypoint(function(event, direction){
-  console.log(direction, 'france')
-  
-  $('.country').html('<a href="album1.html">FRANCE</a>');
-
-  if (direction == 'up') {
-    console.log('bottom in view france');
-    offset: '50%'
-  }
-
-})
-
-$('#tajikistan').waypoint(function(event, direction){
-  console.log(direction, 'tajik')
-
-  if (direction == 'up') {
-    console.log('bottom in view tajik');
-    offset: '50%'  
-  }
-  
-  $('.country').html('<a href="album1.html">TAJIKISTAN</a>');
-})
+// console.log($('#france'));
 
 
-// var waypoint = new Waypoint({
-//   element: document.getElementById('france'),
-//   handler: function(direction) {
-//     console.log('Scrolled to waypoint!')
-//   }
-// })
+$('img').click(function(event){
+  var imgSource = event.target.getAttribute('src');
+  $('.img-modal img').attr('src', imgSource); 
+  $('.img-modal').show();
+});
 
+/*
+1) click handler on ALL images
+  - save src as a variable
+  - set that src as the src of the image within the modal (.img-modal img)
+  - show the modal
 
-// Enlarge image click on index page and album page
-// Click to album page when click on country name
-// Change country name when scroll on index page 
+2) click handler on the modal itself
+  - should just hide the modal
 
-// (if  i have time) offset image when scrolling on index page
+*/

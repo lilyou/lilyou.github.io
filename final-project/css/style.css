@@ -11,6 +11,9 @@ a{
     text-decoration-color: none; color: #000000;
     text-decoration: none;
 }
+a:hover {
+    color: #F2A297;
+}
 .logo{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -31,10 +34,12 @@ a{
 .country{
     font-family: 'Lato', sans-serif;
     font-size: 1.4vw;
-    position: absolute;
+    position: fixed;
+    text-align: center;
     top: 50%;
     left: 0;
     right:0;
+    z-index: 1;
 }
 .country-gallery {
     display: grid;
@@ -43,8 +48,6 @@ a{
     grid-template-columns: repeat(12,1fr);
     grid-template-areas: "l l l l l m m r r r r r" ;
     top:50px;
-    border: 1px solid red;
-
 }
 /* 5-2-5 */
 .middle {
@@ -53,7 +56,6 @@ a{
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 100%;
 }
 .leftcolumn{
     grid-area: l;
@@ -91,9 +93,11 @@ a{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 .navbar {
     position: fixed;
+    z-index: 3;
     margin: 20px 20px;
     top: 0;
     left: 0;
@@ -136,7 +140,31 @@ a{
 .albumContainer{
     display: flex;
     flex-wrap: wrap;
+    margin-top:50px;
 }
 .albumImage{
     margin: 10px;
+    height: auto; 
+    width: auto; 
+    max-width: 500px; 
+    max-height: 300px;
+}
+.albumPhoto{
+    height: auto; 
+    width: auto; 
+    max-width: 500px; 
+    max-height: 300px;  
+}
+/* enlarge image */
+.img-modal {
+    display: none;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* padding: 50px; */
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 4;
 }
