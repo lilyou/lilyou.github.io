@@ -1,3 +1,4 @@
+// Code use in index only
 var countryAlbum = {
   france: '/france-album',
   australia: '/australia-album.html'
@@ -5,7 +6,6 @@ var countryAlbum = {
 
 
 $('.waypoint').waypoint(function(event, direction) {
-  // $('.country a').html(event.target.getAttribute('data-' + direction));
   var country = event.target.getAttribute('data-' + direction);
   var url = countryAlbum[country];
 

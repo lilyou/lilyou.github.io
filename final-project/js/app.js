@@ -19,15 +19,6 @@ $(function() {
   });
 });
 
-// console.log($('#france'));
-
-
-$('img').click(function(event){
-  var imgSource = event.target.getAttribute('src');
-  $('.img-modal img').attr('src', imgSource); 
-  $('.img-modal').show();
-});
-
 /*
 1) click handler on ALL images
   - save src as a variable
@@ -38,3 +29,10 @@ $('img').click(function(event){
   - should just hide the modal
 
 */
+
+$('img').click(function(event){
+  var imgSource = event.target.getAttribute('src');
+  $('.img-modal img').attr('src', imgSource); 
+  $('.img-modal').show();
+});
+
