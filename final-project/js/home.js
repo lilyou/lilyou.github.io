@@ -1,7 +1,8 @@
 // Code use in index only
 var countryAlbum = {
-  france: '/france-album',
-  australia: '/australia-album.html'
+  france: '/final-project', // No france album right now
+  australia: '/final-project/australia-album.html',
+  italy: '/final-project/italy-album.html'
 }
 
 
