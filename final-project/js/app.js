@@ -13,13 +13,7 @@ $(function() {
       }
     });
 
-    $('.img-modal').click(function(event){  
-      $(event.currentTarget).hide();
-    });
-  });
-});
-
-/*
+    /*
 1) click handler on ALL images
   - save src as a variable
   - set that src as the src of the image within the modal (.img-modal img)
@@ -29,6 +23,11 @@ $(function() {
   - should just hide the modal
 
 */
+    $('.img-modal').click(function(event){  
+      $(event.currentTarget).hide();
+    });
+  });
+});
 
 $('img').click(function(event){
   var imgSource = event.target.getAttribute('src');
